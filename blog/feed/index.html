@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<rss version="2.0"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	 xmlns:admin="http://webns.net/mvcb/"
+	 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+	<channel>
+
+	<title><![CDATA[Husni Adil Makmur | Blog]]></title>
+	<link>http://husni.github.io/blog</link>
+	<description>Husni Adil Makmur blog</description>
+	<dc:language></dc:language>
+	<dc:creator></dc:creator>
+	<dc:rights>Copyright 2015</dc:rights>
+	<dc:date>2015-04-15T02:30:17+07:00</dc:date>
+	<admin:generatorAgent rdf:resource="http://statamic.com/" />
+
+			<item>
+			<title><![CDATA[Starts From Here]]></title>
+			<link>http://husni.github.io/blog/starts-from-here</link>
+			<guid>http://husni.github.io/blog/starts-from-here</guid>
+			<description><![CDATA[<p>I hosted my <a href="http://husni.github.io/www.bluepaper-inc.com" title="Bluepaper Inc">personal website</a> on <a href="http://husni.github.io/idwebhost.com" title="IDwebhost Web Hosting Murah &amp; Domain Murah Indonesia. Rp 1000 /bln">IDwebhost</a>, it&#8217;s static portfolio website, so I never update it. Last week my passion had come back to blogging, so I was on fire to find a way how to blog.</p>
+
+<p>I wanted a cool theme, then I went to <a href="http://husni.github.io/themeforest.net" title="Website Templates | WordPress Themes | ThemeForest">themeforest</a>. First I thought of <a href="http://husni.github.io/www.wordpress.com" title="WordPress.com">WordPress</a> theme, and wow, the price for a theme is about $50 on average. I was double thinking at that day, WordPress, I am not familiar with the framework, I might have no time to learn to customize it. So I retreat from blogging via WordPress.</p>
+
+<p>Then I started to find some <a href="http://husni.github.io/wikipedia.org/wiki/HTML" title="HyperText Markup Language">HTML</a> templates, there are many cool templates in there, very cool. But then I thought again, by using HTML template, I have to build back-end engine, I thought of building it, whether using <a href="http://husni.github.io/php.net" title="PHP Hypertext Preprocessor">PHP</a> or <a href="http://husni.github.io/www.scala-lang.org" title="Scalable Language">Scala</a>. No no no no&#8230; I have no time for that. Then I heard that <a href="http://husni.github.io/github.com" title="GitHub">GitHub</a> offers a static HTML hosting so called <a href="http://husni.github.io/pages.github.com" title="GitHub Pages">GitHub Pages</a>. This service was originally launched years ago, but I just know it recently, since I was not actively playing on GitHub.</p>
+
+<p>In GitHub Pages documentation, I found out that GitHub suggests me to use <a href="http://husni.github.io/jekyllrb.com" title="Jekyll &bull; Simple, blog-aware, static sites">Jekyll</a>, an open source program, written in Ruby by Tom Preston-Werner, GitHub&#8217;s co-founder. Jekyll a simple, blog-aware, static site generator for personal, project, or organization sites. So, I tried to install Jekyll. Started by installing Ruby on Windows 8.1&#46; I took hours to have it working on my laptop. I also tried Octopus, a fork of Jekyll that works similiar. I needed more time to have Octopus run on Windows, mostly because of dependency software are not compatible, yikes!</p>
+
+<p>Then I tried to find Jekyll alternatives, I found <a href="http://husni.github.io/staticgen.com" title="Top Open-Source Static Site Generators - StaticGen">StaticGen</a> to get information about static site generator, most of them doesn&#8217;t have admin panel. I want my blogging activity seamlessly. I was looking for that through <a href="http://husni.github.io/www.google.com" title="Google">Google</a>, Jekyll Admin Panel, Octopus Admin Panel, etc. There was an opensource Jekyll admin panel, but it&#8217;s outdated, not working on latest Jekyll.</p>
+
+<p>Finally I introduced to <a href="http://husni.github.io/statamic.com" title="Statamic &mdash; The fast, flexible, and fun to use flat file CMS. | Statamic">Statamic</a>, I forgot where I firstly hear this tool. I then watched their screencast through <a href="http://husni.github.io/www.vimeo.com" title="Vimeo, Your Videos Belong Here">Vimeo</a> and <a href="http://husni.github.io/www.youtube.com" title="YouTube">Youtube</a>. I was impressed on how structured Statamic is. It looks easy and well documented.
+But then I thought that it&#8217;s run on PHP, it&#8217;s NOT static site generator, so I won&#8217;t be able to host it on GitHub. But hey, I read it on <a href="http://husni.github.io/statamic.com/blog/hello-one-dot-ten" title="Statamic 1.10">here</a> and <a href="http://husni.github.io/statamic.com/learn/advanced-features/static-site-generator" title="Static Site Generator">here</a>. They support generating HTML files. Also they have admin panel. I was more impressed. Then I decided to buy a personal license, and downloaded it.</p>
+
+<p>Awesome, the code style was beautiful, easy to understand. I love it.</p>
+
+<p>Once I downloaded it, I installed it on XAMPP. Ouch, it&#8217;s not working. It requires PCRE and UTF-8 Support. Oh no, where can I get the compiled PHP binary with that specification? I tried it on <a href="http://husni.github.io/wiki.debian.org/DebianWheezy" title="DebianWheezy">Debian Wheezy</a> using <a href="http://husni.github.io/en.wikipedia.org/wiki/Advanced_Packaging_Tool" title="Advanced Packaging Tool">apt-get</a> run on <a href="http://husni.github.io/www.docker.com" title="Docker - Build, Ship, and Run Any App, Anywhere">Docker</a>. Somehow I failed to manage it, stuck on dependencies. Hours later I tried to install <a href="http://wampserver.com" title="Wamp Server">Wamp Server</a>. <strong>YES!!!</strong> All is good. The required and recommended Statamic prerequisites are fulfilled.</p>
+
+<p>After it works on my local machine, I started to dig the code. I found bugs on the static generator feature. It&#8217;s normal, it is only the first release of this feature. Then I tried to fix them. Now it works like a charm, meets all my need.</p>
+
+<p>I want to use non built in theme. Found this <a href="http://husni.github.io/nosidebar.com/themes/minimalist/" title="The Minimalist Theme by Brian Gardner">cool theme</a>. I registered to the site and started downloading it. Dang!!! it&#8217;s wordpress theme, they don&#8217;t mention it on the download page. Then I searched another. And got <a href="http://husni.github.io/mmistakes.github.io/minimal-mistakes/" title="Minimal Mistakes">this</a>. It&#8217;s Jekyll theme. At least it&#8217;s not a wordpress theme. I read the license agreement, that&#8217;s okay, it&#8217;s free. Then I downloaded it and ported it to Statamic theme and also customize it. I took two days on my spare time to finish it. And <strong>Viola!!!</strong> My blogging story starts from here. Powered by GitHub, Statamic, and Minimal Mistakes. Look at the footer!</p>]]></description>
+			<dc:subject><![CDATA[Random, Statamic]]></dc:subject>
+			<dc:date>2015-04-15T00:00:00+07:00</dc:date>
+		</item>
+	
+
+</channel>
+
+</rss>
