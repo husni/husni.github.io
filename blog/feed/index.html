@@ -16,9 +16,79 @@
 	<dc:language></dc:language>
 	<dc:creator></dc:creator>
 	<dc:rights>Copyright 2015</dc:rights>
-	<dc:date>2015-04-16T01:47:02+07:00</dc:date>
+	<dc:date>2015-04-17T00:51:34+07:00</dc:date>
 	<admin:generatorAgent rdf:resource="http://statamic.com/" />
 
+			<item>
+			<title><![CDATA[How does SSD caching work?]]></title>
+			<link>http://husni.github.io/blog/how-does-ssd-caching-work</link>
+			<guid>http://husni.github.io/blog/how-does-ssd-caching-work</guid>
+			<description><![CDATA[<p>SSD caching is not a new technology, it was called SSD Caching, now it is <a href="">Intel Smart Response Technology (Intel SRT)</a>.</p>
+
+<blockquote>
+  <p>In computing, Smart Response Technology (SRT, also called SSD Caching before it was launched) is a proprietary caching mechanism introduced in 2011 by Intel for their Z68 chipset (for the Sandy Bridge–series processors), which allows a SATA solid-state drive (SSD) to function as cache for a (conventional, magnetic) hard disk drive (HDD). <a href="http://www.anandtech.com/show/4329/intel-z68-chipset-smart-kjbbjhresponse-technology-ssd-caching-review/2" title="Anand Lal Shimpi (May 11, 2011)">Source</a>.</p>
+</blockquote>
+
+<p>This technology is intended to provide improved performance for computers that use traditional hard drives but does not take much cost. You will just need small SSD, for example 8GB, 16GB, 24GB, &#8230;, or 64GB (max).
+The SSD is used to cache or store commonly accessed data. Because of SSDs&#8217; speed are much faster than traditional HDD, this will allow the computers read the cached data much faster if it had to read the same data directly from the HDD.</p>
+
+<h3>How it works?</h3>
+
+<p>The fastest memory module on a computer is CPU Cache, and then followed by RAM, then followed by persistent storages like SSD and HDD.
+When a program first run, all of files needed by the program to run (for example, other .exe files and .dll files, etc) are read from the HDD and loaded into RAM, then CPU Cache. You can see the illustration below:</p>
+
+<h5>Use HDD only</h5>
+
+<div>
+    <img src="http://husni.github.io/assets/img/static/cpu.svg" width="64"> &nbsp;
+    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="64">
+    <img src="http://husni.github.io/assets/img/static/ram.svg" width="64">
+    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="64">
+    <img src="http://husni.github.io/assets/img/static/hdd.svg" width="64">
+</div>
+
+<hr>
+
+<h5>Use SSD only</h5>
+
+<div>
+    <img src="http://husni.github.io/assets/img/static/cpu.svg" width="64"> &nbsp;
+    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="64">
+    <img src="http://husni.github.io/assets/img/static/ram.svg" width="64">
+    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="64">
+    <img src="http://husni.github.io/assets/img/static/ssd.svg" width="64">
+</div>
+
+<hr>
+
+<p>The idea of SSD caching is to add an extra step between RAM and HDD, so the process will be:</p>
+
+<h5>Use HDD + SSD</h5>
+
+<div>
+    <img src="http://husni.github.io/assets/img/static/cpu.svg" width="64"> &nbsp;
+    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="64">
+    <img src="http://husni.github.io/assets/img/static/ram.svg" width="64">
+    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="64">
+    <img src="http://husni.github.io/assets/img/static/ssd.svg" width="64">
+    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="64">
+    <img src="http://husni.github.io/assets/img/static/hdd.svg" width="64">
+</div>
+
+<p><br>
+The computer will check if accessed data are already cached in memory. If the data does not exist, it will check SSD first before checking HDD.</p>
+
+<hr>
+
+<p><br>
+By using this method, you will still use your big HDD, yet having SSD-like performance, without spending much money.
+<br><br><br><br>
+<small>
+    Image Credit: <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">Flaticon</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
+</small></p>]]></description>
+			<dc:subject><![CDATA[Technology, Computer]]></dc:subject>
+			<dc:date>2015-04-16T00:00:00+07:00</dc:date>
+		</item>
 			<item>
 			<title><![CDATA[Starts From Here]]></title>
 			<link>http://husni.github.io/blog/starts-from-here</link>
