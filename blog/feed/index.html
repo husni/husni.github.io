@@ -16,75 +16,45 @@
 	<dc:language></dc:language>
 	<dc:creator></dc:creator>
 	<dc:rights>Copyright 2015</dc:rights>
-	<dc:date>2015-04-17T18:16:31+07:00</dc:date>
+	<dc:date>2015-04-18T01:35:17+07:00</dc:date>
 	<admin:generatorAgent rdf:resource="http://statamic.com/" />
 
 			<item>
 			<title><![CDATA[How does SSD caching work?]]></title>
 			<link>http://husni.github.io/blog/how-does-ssd-caching-work</link>
 			<guid>http://husni.github.io/blog/how-does-ssd-caching-work</guid>
-			<description><![CDATA[<p>SSD caching is not a new technology, it was called SSD Caching, now it is <a href="">Intel Smart Response Technology (Intel SRT)</a>.</p>
-
+			<description><![CDATA[<p>SSD caching is not a new technology, it was called SSD Caching, now it is [Intel Smart Response Technology (Intel SRT)]().</p>
 <blockquote>
-  <p>In computing, Smart Response Technology (SRT, also called SSD Caching before it was launched) is a proprietary caching mechanism introduced in 2011 by Intel for their Z68 chipset (for the Sandy Bridge–series processors), which allows a SATA solid-state drive (SSD) to function as cache for a (conventional, magnetic) hard disk drive (HDD). <a href="http://www.anandtech.com/show/4329/intel-z68-chipset-smart-kjbbjhresponse-technology-ssd-caching-review/2" title="Anand Lal Shimpi (May 11, 2011)">Source</a>.</p>
+<p>In computing, Smart Response Technology (SRT, also called SSD Caching before it was launched) is a proprietary caching mechanism introduced in 2011 by Intel for their Z68 chipset (for the Sandy Bridge–series processors), which allows a SATA solid-state drive (SSD) to function as cache for a (conventional, magnetic) hard disk drive (HDD). <a href="http://www.anandtech.com/show/4329/intel-z68-chipset-smart-kjbbjhresponse-technology-ssd-caching-review/2" title="Anand Lal Shimpi (May 11, 2011)">Source</a>.</p>
 </blockquote>
-
 <p>This technology is intended to provide improved performance for computers that use traditional hard drives but does not take much cost. You will just need small SSD, for example 8GB, 16GB, 24GB, &#8230;, or 64GB (max).
 The SSD is used to cache or store commonly accessed data. Because of SSDs&#8217; speed are much faster than traditional HDD, this will allow the computers read the cached data much faster if it had to read the same data directly from the HDD.</p>
-
 <h3>How it works?</h3>
-
 <p>The fastest memory module on a computer is CPU Cache, and then followed by RAM, then followed by persistent storages like SSD and HDD.
 When a program first run, all of files needed by the program to run (for example, other .exe files and .dll files, etc) are read from the HDD and loaded into RAM, then CPU Cache. You can see the illustration below:</p>
-
 <h5>Use HDD only</h5>
-
 <div>
-    <img src="http://husni.github.io/assets/img/static/cpu.svg" width="12%"> &nbsp;
-    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%">
-    <img src="http://husni.github.io/assets/img/static/ram.svg" width="12%">
-    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%">
-    <img src="http://husni.github.io/assets/img/static/hdd.svg" width="12%">
-</div>
-
+    <img src="http://husni.github.io/assets/img/static/cpu.svg" width="12%">  
+    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%"><img src="http://husni.github.io/assets/img/static/ram.svg" width="12%"><img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%"><img src="http://husni.github.io/assets/img/static/hdd.svg" width="12%"></div>
 <hr>
-
 <h5>Use SSD only</h5>
-
 <div>
-    <img src="http://husni.github.io/assets/img/static/cpu.svg" width="12%"> &nbsp;
-    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%">
-    <img src="http://husni.github.io/assets/img/static/ram.svg" width="12%">
-    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%">
-    <img src="http://husni.github.io/assets/img/static/ssd.svg" width="12%">
-</div>
-
+    <img src="http://husni.github.io/assets/img/static/cpu.svg" width="12%">  
+    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%"><img src="http://husni.github.io/assets/img/static/ram.svg" width="12%"><img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%"><img src="http://husni.github.io/assets/img/static/ssd.svg" width="12%"></div>
 <hr>
-
 <p>The idea of SSD caching is to add an extra step between RAM and HDD, so the process will be:</p>
-
 <h5>Use HDD + SSD</h5>
-
 <div>
-    <img src="http://husni.github.io/assets/img/static/cpu.svg" width="12%"> &nbsp;
-    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%">
-    <img src="http://husni.github.io/assets/img/static/ram.svg" width="12%">
-    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%">
-    <img src="http://husni.github.io/assets/img/static/ssd.svg" width="12%">
-    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%">
-    <img src="http://husni.github.io/assets/img/static/hdd.svg" width="12%">
-</div>
-
+    <img src="http://husni.github.io/assets/img/static/cpu.svg" width="12%">  
+    <img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%"><img src="http://husni.github.io/assets/img/static/ram.svg" width="12%"><img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%"><img src="http://husni.github.io/assets/img/static/ssd.svg" width="12%"><img src="http://husni.github.io/assets/img/static/arrow-right.svg" width="12%"><img src="http://husni.github.io/assets/img/static/hdd.svg" width="12%"></div>
 <p><br>
 The computer will check if accessed data are already cached in memory. If the data does not exist, it will check SSD first before checking HDD.</p>
-
 <hr>
-
 <p><br>
 By using this method, you will still use your big HDD, yet having SSD-like performance, without spending much money.
 <br><br><br><br>
 <small>
-    Image Credit: <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">Flaticon</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
+Image Credit: <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">Flaticon</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
 </small></p>]]></description>
 			<dc:subject><![CDATA[Technology, Computer]]></dc:subject>
 			<dc:date>2015-04-16T00:00:00+07:00</dc:date>
@@ -93,25 +63,16 @@ By using this method, you will still use your big HDD, yet having SSD-like perfo
 			<title><![CDATA[Starts From Here]]></title>
 			<link>http://husni.github.io/blog/starts-from-here</link>
 			<guid>http://husni.github.io/blog/starts-from-here</guid>
-			<description><![CDATA[<p>I hosted my <a href="http://www.bluepaper-inc.com" title="Bluepaper Inc">personal website</a> on <a href="http://idwebhost.com" title="IDwebhost Web Hosting Murah &amp; Domain Murah Indonesia. Rp 1000 /bln">IDwebhost</a>, it&#8217;s static portfolio website, so I never update it. Last week my passion had come back to blogging, so I was on fire to find a way how to blog.</p>
-
+			<description><![CDATA[<p>I hosted my <a href="http://www.bluepaper-inc.com" title="Bluepaper Inc">personal website</a> on <a href="http://idwebhost.com" title="IDwebhost Web Hosting Murah & Domain Murah Indonesia. Rp 1000 /bln">IDwebhost</a>, it&#8217;s static portfolio website, so I never update it. Last week my passion had come back to blogging, so I was on fire to find a way how to blog.</p>
 <p>I wanted a cool theme, then I went to <a href="http://themeforest.net" title="Website Templates | WordPress Themes | ThemeForest">themeforest</a>. First I thought of <a href="http://www.wordpress.com" title="WordPress.com">WordPress</a> theme, and wow, the price for a theme is about $50 on average. I was double thinking at that day, WordPress, I am not familiar with the framework, I might have no time to learn to customize it. So I retreat from blogging via WordPress.</p>
-
 <p>Then I started to find some <a href="http://wikipedia.org/wiki/HTML" title="HyperText Markup Language">HTML</a> templates, there are many cool templates in there, very cool. But then I thought again, by using HTML template, I have to build back-end engine, I thought of building it, whether using <a href="http://php.net" title="PHP Hypertext Preprocessor">PHP</a> or <a href="http://www.scala-lang.org" title="Scalable Language">Scala</a>. No no no no&#8230; I have no time for that. Then I heard that <a href="http://github.com" title="GitHub">GitHub</a> offers a static HTML hosting so called <a href="http://pages.github.com" title="GitHub Pages">GitHub Pages</a>. This service was originally launched years ago, but I just know it recently, since I was not actively playing on GitHub.</p>
-
-<p>In GitHub Pages documentation, I found out that GitHub suggests me to use <a href="http://jekyllrb.com" title="Jekyll &bull; Simple, blog-aware, static sites">Jekyll</a>, an open source program, written in Ruby by Tom Preston-Werner, GitHub&#8217;s co-founder. Jekyll a simple, blog-aware, static site generator for personal, project, or organization sites. So, I tried to install Jekyll. Started by installing Ruby on Windows 8.1&#46; I took hours to have it working on my laptop. I also tried Octopus, a fork of Jekyll that works similiar. I needed more time to have Octopus run on Windows, mostly because of dependency software are not compatible, yikes!</p>
-
+<p>In GitHub Pages documentation, I found out that GitHub suggests me to use <a href="http://jekyllrb.com" title="Jekyll &bull; Simple, blog-aware, static sites">Jekyll</a>, an open source program, written in Ruby by Tom Preston-Werner, GitHub&#8217;s co-founder. Jekyll a simple, blog-aware, static site generator for personal, project, or organization sites. So, I tried to install Jekyll. Started by installing Ruby on Windows 8.1. I took hours to have it working on my laptop. I also tried Octopus, a fork of Jekyll that works similiar. I needed more time to have Octopus run on Windows, mostly because of dependency software are not compatible, yikes!</p>
 <p>Then I tried to find Jekyll alternatives, I found <a href="http://staticgen.com" title="Top Open-Source Static Site Generators - StaticGen">StaticGen</a> to get information about static site generator, most of them doesn&#8217;t have admin panel. I want my blogging activity seamlessly. I was looking for that through <a href="http://www.google.com" title="Google">Google</a>, Jekyll Admin Panel, Octopus Admin Panel, etc. There was an opensource Jekyll admin panel, but it&#8217;s outdated, not working on latest Jekyll.</p>
-
 <p>Finally I introduced to <a href="http://statamic.com" title="Statamic &mdash; The fast, flexible, and fun to use flat file CMS. | Statamic">Statamic</a>, I forgot where I firstly hear this tool. I then watched their screencast through <a href="http://www.vimeo.com" title="Vimeo, Your Videos Belong Here">Vimeo</a> and <a href="http://www.youtube.com" title="YouTube">Youtube</a>. I was impressed on how structured Statamic is. It looks easy and well documented.
 But then I thought that it&#8217;s run on PHP, it&#8217;s NOT static site generator, so I won&#8217;t be able to host it on GitHub. But hey, I read it on <a href="http://statamic.com/blog/hello-one-dot-ten" title="Statamic 1.10">here</a> and <a href="http://statamic.com/learn/advanced-features/static-site-generator" title="Static Site Generator">here</a>. They support generating HTML files. Also they have admin panel. I was more impressed. Then I decided to buy a personal license, and downloaded it.</p>
-
 <p>Awesome, the code style was beautiful, easy to understand. I love it.</p>
-
 <p>Once I downloaded it, I installed it on XAMPP. Ouch, it&#8217;s not working. It requires PCRE and UTF-8 Support. Oh no, where can I get the compiled PHP binary with that specification? I tried it on <a href="http://wiki.debian.org/DebianWheezy" title="DebianWheezy">Debian Wheezy</a> using <a href="http://en.wikipedia.org/wiki/Advanced_Packaging_Tool" title="Advanced Packaging Tool">apt-get</a> run on <a href="http://www.docker.com" title="Docker - Build, Ship, and Run Any App, Anywhere">Docker</a>. Somehow I failed to manage it, stuck on dependencies. Hours later I tried to install <a href="http://wampserver.com" title="Wamp Server">Wamp Server</a>. <strong>YES!!!</strong> All is good. The required and recommended Statamic prerequisites are fulfilled.</p>
-
 <p>After it works on my local machine, I started to dig the code. I found bugs on the static generator feature. It&#8217;s normal, it is only the first release of this feature. Then I tried to fix them. Now it works like a charm, meets all my need.</p>
-
 <p>I want to use non built in theme. Found this <a href="http://nosidebar.com/themes/minimalist/" title="The Minimalist Theme by Brian Gardner">cool theme</a>. I registered to the site and started downloading it. Dang!!! it&#8217;s wordpress theme, they don&#8217;t mention it on the download page. Then I searched another. And got <a href="http://mmistakes.github.io/minimal-mistakes/" title="Minimal Mistakes">this</a>. It&#8217;s Jekyll theme. At least it&#8217;s not a wordpress theme. I read the license agreement, that&#8217;s okay, it&#8217;s free. Then I downloaded it and ported it to Statamic theme and also customize it. I took two days on my spare time to finish it. And <strong>Viola!!!</strong> My blogging story starts from here. Powered by GitHub, Statamic, and Minimal Mistakes. Look at the footer!</p>]]></description>
 			<dc:subject><![CDATA[Random, Statamic]]></dc:subject>
 			<dc:date>2015-04-15T00:00:00+07:00</dc:date>

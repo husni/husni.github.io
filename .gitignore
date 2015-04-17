@@ -14,3 +14,9 @@ _cache/*
 !_cache/index.html
 _logs/*
 !_logs/index.html
+
+# Theme Files
+theme.yaml
+*/layouts/*
+*/partials/*
+*/templates/*
