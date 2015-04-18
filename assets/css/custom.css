@@ -319,3 +319,11 @@ ol.roman ol {
    padding: 0;
    *zoom: 1;
 }
+
+/* Misc */
+a.toc-on {
+	opacity: 0.8 !important;
+}
+a.toc-on:hover {
+	opacity: 1 !important;
+}
