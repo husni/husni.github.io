@@ -21,6 +21,11 @@
 		<priority>0.8</priority>
 	</url>
 	<url>
+		<loc>http://husni.github.io/blog/how-is-google-street-view-captured</loc>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
 		<loc>http://husni.github.io/blog/articles</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
